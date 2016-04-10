@@ -2719,7 +2719,7 @@ void CompilerGLSL::emit_instruction(const Instruction &i)
         case OpUMod:
         case OpSMod:
         case OpFMod:
-            BOP(%);
+            BFOP(mod);
             break;
 
         // Relational
